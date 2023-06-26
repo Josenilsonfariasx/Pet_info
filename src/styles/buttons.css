@@ -1,0 +1,43 @@
+button {
+  border: 0;
+  border-radius: 0.3rem;
+  padding: 0.6rem;
+  cursor: pointer;
+}
+
+.redirect-edit__button {
+  border: 1px solid var(--gray600);
+  background-color: var(--gray900);
+  color: var(--gray100);
+}
+
+.redirect-edit__button:hover {
+  background-color: var(--gray800);
+}
+
+.close-cancel__button {
+  background-color: var(--gray600);
+  color: var(--gray400);
+}
+
+.close-cancel__button:hover {
+  color: var(--gray300);
+}
+
+.confirm__button {
+  background-color: var(--brand100);
+  color: var(--gray900);
+}
+
+.confirm__button:hover {
+  background-color: var(--brand200);
+}
+
+.alert__button {
+  background-color: var(--alert100);
+  color: var(--gray900);
+}
+
+.alert__button:hover {
+  background-color: var(--alert200);
+}
