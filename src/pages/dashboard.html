@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/reset.css">
+    <link rel="stylesheet" href="../styles/globalStyles.css">
+    <link rel="stylesheet" href="../styles/buttons.css">
+    <link rel="stylesheet" href="../styles/buttons.css">
+    <link rel="stylesheet" href="../styles/dashboard.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+
+    <title>Petinfo</title>
+</head>
+<body class="">
+    <header class="header__container container">
+        <h1>Petinfo</h1>
+        <div class="header__div">
+            <button type="button" id="modal__create">Criar publicação</button>
+            <img id="img-logo" src="https://cdn-icons-png.flaticon.com/512/387/387561.png" alt="Logo">
+            <img id="logout" src="../assests/logouth.svg" alt="Logouth">
+        </div>
+    </header>
+    <main class="main__container">
+        <div>
+            <span class="main__title container">Feed</span>
+        </div>
+        <section class="main__posts container">
+            <ul class="list__container">
+            </ul>
+        </section>
+        <dialog id="dialog">
+            <section class="list__header modal">
+                <div>
+                    <img class="list__logo" id="img-logoModal" src="../assests/Ellipse 1.svg" alt="logo">
+                    <span class="list__name name"></span>
+                    <span class="list__bar">|</span>
+                    <span class="list__time-post" id="postTime"></span>
+                    <div id="closex">
+                        <button type="button" class="btn__closeModal">x</button>
+                    </div>
+                </div>
+            </section>
+            <section class="modal__content">
+                <div class="post">
+                    <h3 id="modal__title"></h3>
+                    <textarea name="" id="text__area" cols="50" rows="10" readonly></textarea>
+                </div>
+            </section>
+        </dialog>
+        <dialog id="dialog__edit">
+            <section class="list__header modal">
+                <div>
+                    <img class="list__logo" id="img-logoModal" src="../assests/Ellipse 1.svg" alt="logo">
+                    <span class="list__name name"></span>
+                    <span class="list__bar">|</span>
+                    <span class="list__time-post" id="postTime"></span>
+                    <div id="closex">
+                        <button type="button" class="btn__closeModal">x</button>
+                    </div>
+                </div>
+            </section>
+            <section class="modal__content">
+                <div class="post">
+                    <h3 id="modal__title"></h3>
+                    <textarea name="" id="text__area" cols="50" rows="10"></textarea>
+                </div>
+                <section class="modal__edit__buttons">
+                    <button class="btn__cancelar">Cancelar</button>
+                    <button class="btn__save">Salvar alterações</button>
+                </section>
+            </section>
+        </dialog>
+        <dialog id="dialog__create">
+            <section class="list__header modal">
+                <div>
+                    <span id="titleCreate">Crie um novo Poste</span>
+                    <div id="closex">
+                        <button type="button" id="close" class="btn__closeModal">x</button>
+                    </div>
+                </div>
+            </section>
+            <section class="modal__content">
+                <div class="post">
+                    <label for="modal__title">Titulo do Poste</label>
+                    <input id="modal__title__crate" placeholder="Digite o titulo do poste"></input>
+                    <textarea name="" id="text__area__create" cols="50" rows="10" placeholder="Digite o conteudo do poste">
+                    </textarea>
+                </div>
+                <section class="modal__edit__buttons">
+                    <button class="btn__cancelar btn__closeModal" id="close">Cancelar</button>
+                    <button class="btn__create">Publicar</button>
+                </section>
+            </section>
+        </dialog>
+        <dialog id="dialog__delete">
+            <section class="modalDelete">
+            <section class="list__header modal">
+                <div>
+                    <span id="titleDelete">Confirmação de exclusão</span>
+                    <div id="closex">
+                        <button type="button" class="btn__closeModal">x</button>
+                    </div>
+                </div>
+            </section>
+            <section class="modal__content">
+                <div class="post">
+                    <span id="modal__titleDelete">Tem certeza que deseja excluir esse poste?</span>
+                    <span id="textDelete">Essa ação não poderá ser desfeita, então pedimos que tenha cautela antes de concluir</span>
+                </div>
+                <section class="modal__edit__buttons__delete">
+                    <button class="btn__cancelar">Cancelar</button>
+                    <button class="btn__confirm">Sim, excluir esse poste</button>
+                </section>
+            </section>
+            </section>
+        </dialog>
+    </main>
+    <script type="module" src="../scripts/userPost/getUser.js"></script>
+    <script type="module" src="../scripts/postService/getPost.js"></script>
+    <script type="module" src="../scripts/postService/createPost.js"></script>
+    <script type="module" src="../scripts/dashboard.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script type="module" src="../scripts/postService/editPost.js"></script>
+    <script type="module" src="../scripts/postService/createPost.js"></script>
+    <script type="module" src="../scripts/postService/deletePost.js"></script>
+</body>
+</html>

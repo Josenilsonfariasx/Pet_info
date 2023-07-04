@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Nunito:wght@600&display=swap");
+
 :root {
   --brand100: hsl(230, 57%, 50%);
   --brand200: hsl(230, 68%, 54%);
@@ -13,10 +15,12 @@
   --alert100: hsl(349, 57%, 50%);
   --alert200: hsl(349, 69%, 55%);
   --sucess100: hsl(162, 88%, 26%);
+  --font-family-IBM: "IBM Plex Sans", sem serifa;
 }
 
 body {
   font-family: "Inter, sans-serif";
+  z-index: 0;
 }
 
 .container {

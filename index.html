@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/styles/reset.css">
+    <link rel="stylesheet" href="./src/styles/globalStyles.css">
+    <link rel="stylesheet" href="./src/styles/login.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <title>Petinfo</title>
+</head>
+<body>
+    <main class="main__container">
+        <section class="main__petinfo">
+            <h1>Petinfo</h1>
+            <span class="slogan"><strong>Amor</strong> e <strong>carinho</strong> por meio do conhecimento</span>
+            <span class="petinfo__text">Todas as informações para melhorar a vida do seu pet em um só lugar</span>
+            <div class="imgs">
+                <div>
+                    <img src="./src/assests/cat1fullLogin.png" alt="catfull">
+                    <img src="./src/assests/dog2login.png" alt="dog2">
+                    <img src="./src/assests/dogfullLogin.png" alt="dogfull">
+                </div>
+                <img src="./src/assests/cat1login.png" alt="cat1">
+            </div>
+        </section>
+        <section class="main__login">
+            <form class="form__container">
+                <h3>Login</h3>
+                <label for="email">Email</label>
+                <input type="email" name="email" placeholder="Insira seu email" required>
+                <label for="password">Senha</label>
+                <input type="password" name="password" placeholder="Insira sua senha" required>
+                <label id="incorrect">A senha esta incorreta</label>
+                <button class="login__in" id="login__in" type="submit">Acessar</button>
+                <div id="spin">
+                    <div class="spinner-border text-primary" role="status">
+                        <span class="visually-hidden">Loading...</span>
+                    </div>
+                </div>
+                <span>Clicando no botão abaixo, você pode se cadastrar rapidamente</span>
+                <button type="button" id="register">Cadastrar</button>
+            </form>
+        </section>                
+    </main>
+    <script src="./src/scripts/login.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,178 @@
+/* Register */
+    @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Luckiest+Guy&display=swap');
+
+.main__container {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.main__register{
+    padding: 2.75rem 1.5rem;
+    gap: 1.625rem;
+    border-radius: 4px;
+    border: 1px solid #D9D9D9;
+    background: var(--grey-9, #FCFEFF);
+}
+.form__header {
+    display: flex;
+    width: 20.0625rem;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.form__header > h3 {
+    color: #1E1E1E;
+    font-size: 1.25rem;
+    font-family: 'IBM Plex Sans', sem serifa;
+    font-weight: 600;
+    line-height: 150%;
+}
+
+.form__header > button {
+    display: flex;
+    height: 2rem;
+    padding: 0rem 0.5rem;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    border: 1px solid var(--grey-6, #E9ECEF);
+    background-color: transparent;
+}
+
+.form__inputs {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.625rem;
+}
+
+input {
+    display: flex;
+    width: 20.0625rem;
+    height: 2.75rem;
+    padding: 0rem 1rem;
+    align-items: center;
+    border-radius: 4px;
+    border: 1px solid var(--grey-6, #E9ECEF);
+    background: var(--grey-8, #F8F9FA);
+}
+
+button {
+    display: flex;
+    height: 2.375rem;
+    padding: 0rem 1rem;
+    justify-content: center;
+    align-items: center;
+    align-self: stretch;
+}
+
+#register {
+    border-radius: 4px;
+    border: 1px solid var(--brand-1, #364FC7);
+    background: var(--brand-1, #364FC7);
+    color: var(--grey-9, #FCFEFF);
+
+    /* font4/500 */
+    font-size: 1rem;
+    font-family: 'IBM Plex Sans', sem serifa;
+    font-weight: 600;
+    line-height: 150%;
+}
+
+#back__login {
+    border-radius: 4px;
+    border: 1px solid var(--grey-6, #E9ECEF);
+    background-color: var(--grey-6);
+    cursor: pointer;
+}
+
+label {
+    color: var(--grey-1, #212529);
+    font-size: 1rem;
+    font-family: 'IBM Plex Sans', sem serifa;
+    font-weight: 500;
+    line-height: 150%;
+}
+
+/* Pets */
+
+.main__pets {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    width: 25rem;
+    height: 26.1875rem; 
+    margin-left: 8rem;
+}
+
+.main__pets > h3 {
+    color: var(--grey-1, #212529);
+    font-size: 2rem;
+    font-family: 'IBM Plex Sans', sem serifa;
+    font-weight: 500;
+    line-height: 150%;
+}
+
+#main__happy{
+    color: var(--brand-1, #364FC7);
+
+    font-size: 2rem;
+    font-family: 'IBM Plex Sans', sem serifa;
+    font-weight: 600;
+    line-height: 150%;
+}
+
+#main__text {
+    display: flex;
+    width: 20rem;
+    flex-direction: column;
+    flex-shrink: 0;
+    color: var(--grey-3, #495057);
+
+    font-size: 1rem;
+    font-family: 'IBM Plex Sans', sem serifa;
+    line-height: 150%;
+}
+
+.imgs {
+    display: flex;
+    gap: 1rem;
+    width: 18.75rem;
+    height: 12.6875rem;
+    flex-shrink: 0;
+}
+
+#cat1 {
+    width: 5.4375rem;
+    height: 12.6875rem;
+    flex-shrink: 0;
+    border-radius: 12px;
+    background: url(<path-to-image>), lightgray 50% / cover no-repeat, #D9D9D9;
+}
+
+.div2 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.img__line {
+    width: 5.4375rem;
+    height: 5.75rem;
+    flex-shrink: 0;
+    border-radius: 12px;
+    background: url(<path-to-image>), lightgray 50% / cover no-repeat, #D9D9D9;
+}
+
+#cat3 {
+    width: 100%;
+    height: 5.75rem;
+    flex-shrink: 0;
+}
+
+#spin {
+    display: none;
+    justify-content: center;
+}

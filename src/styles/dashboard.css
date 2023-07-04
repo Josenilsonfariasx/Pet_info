@@ -1,0 +1,342 @@
+/* @import url('https://fonts.googleapis.com/css2?family=var(--font-family-IBM):ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Luckiest+Guy&display=swap'); */
+.header__container {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 3.375rem;
+}
+
+.header__container > h1 {
+    color: #212529;
+    font-size: 1.5rem;
+    font-family: var(--font-family-IBM);
+    font-weight: 500;
+    line-height: 150%;
+
+}
+
+.header__div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.header__div > button {
+    display: inline-flex;
+    height: 38px;
+    padding: 0px 16px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    border-radius: 4px;
+    border: 1px solid var(--brand-1, #364FC7);
+    background: var(--brand-1, #364FC7);
+    color: white;
+}
+
+.main__container {
+    margin-top: 4.3125rem;
+}
+
+.main__container > div{
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    height: 64px;
+    width: 100%;
+    background-color: #F8F9FA;
+}
+.main__title {
+    color: var(--grey-1, #212529);
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+    font-size: 1.5rem;
+    font-family: var(--font-family-IBM);
+    font-weight: 500;
+    line-height: 150%;
+    text-align: start;
+}
+
+.main__posts {
+    margin-top: 5%;
+    display: flex;
+}
+
+.list__posts {
+    width: 100%;
+    margin-bottom: 15%;
+}
+
+.list__header {
+    display: flex;
+    width: 800px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.list__header > div {
+    display: flex;
+    gap: 10px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.list__bar {
+    color: #868E96;
+    font-size: 0.875rem;
+    font-family: var(--font-family-IBM);
+    font-weight: 500;
+    line-height: 150%;
+}
+.list__name {
+    color: #212529;
+    
+    font-size: 0.875rem;
+    font-family: var(--font-family-IBM);
+    font-weight: 500;
+    line-height: 150%;
+}
+
+.list__time-post {
+    color: #868E96;
+    font-size: 0.875rem;
+    font-family: var(--font-family-IBM);
+    font-weight: 500;
+    line-height: 150%;
+}
+
+.list__buttons {
+    display: flex;
+    gap: 10px;
+    margin-right: 30px;
+}
+
+.list__edit {
+    display: flex;
+    width: 70px;
+    height: 32px;
+    padding: 0px 8px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    background-color: transparent;
+    border: 1px solid var(--grey-6, #E9ECEF);
+}
+
+.list__delete {
+    display: flex;
+    height: 32px;
+    width: 70px;
+    padding: 0px 8px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    border: 1px solid var(--grey-7, #F1F3F5);
+    background: var(--grey-7, #F1F3F5);
+    color: var(--grey-4, #868E96);
+
+    font-size: 14px;
+    font-family: var(--font-family-IBM);
+    font-weight: 500;
+    line-height: 150%;
+}
+
+.post {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    gap: 30px;
+}
+
+.post > h3 {
+    color: #212529;
+    
+    font-size: 24px;
+    font-family: var(--font-family-IBM);
+    font-weight: 600;
+    line-height: 150%;
+}
+
+.post > span {
+    color: var(--grey-3, #495057);
+
+    font-size: 16px;
+    font-family: var(--font-family-IBM);
+    line-height: 150%;
+}
+
+.post > button {
+    color: var(--brand-1, #364FC7);
+    font-size: 1rem;
+    font-family: var(--font-family-IBM);
+    font-weight: 500;
+    line-height: 150%;
+    text-align: start;
+    padding: 0;
+    background-color: transparent;
+}
+
+#img-logo {
+    width: 41px;
+    height: 41.051px;
+}
+.btn__closeModal {
+    padding: 4px 14px;
+}
+
+#closex {
+    position: absolute;
+    right: 30px;
+}
+#img-logoModal {
+    width: 41px;
+    height: 41.051px;
+}
+
+#text__area {
+    border: none;
+    color: #495057;
+    font-size: 16px;
+    font-family: var(--font-family-IBM);
+    line-height: 150%;
+}
+
+dialog::backdrop {
+    background-color: #495057;
+}
+
+#logout {
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+}
+
+.modal__edit__buttons {
+    display: flex;
+    gap: 10px;
+    margin-left: 60%;
+}
+
+.btn__cancelar {
+    border-radius: 4px;
+    background: #E9ECEF;
+    color: #868E96;
+    font-size: 16px;
+    font-family: var(--font-family-IBM);
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+}
+
+.btn__save {
+    border-radius: 4px;
+    background: var(--brand-1, #364FC7);
+    color: var(--grey-9, #FCFEFF);
+    font-size: 16px;
+    font-family: var(--font-family-IBM);
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+    border-radius: 4px;
+    background: var(--brand-1, #364FC7);
+}
+
+#dialog__create {
+    border-radius: 8px;
+    background: var(--grey-9, #FCFEFF);    
+}
+
+#titleCreate {
+    color: #212529;
+    font-size: 20px;
+    font-family: var(--font-family-IBM);
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+}
+
+label {
+    color: #212529;
+    font-size: 16px;
+    font-family: IBM Plex Sans;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+}
+
+#modal__title__crate {
+    display: inline-flex;
+    padding: 10px 17px;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+#text__area__create {
+    display: flex;
+    width: 743px;
+    height: 120px;
+    padding: 10px 17px;
+    align-items: flex-start;
+    gap: 10px;
+    flex-shrink: 0;
+    border-radius: 4px;
+    border: 1px solid #D9D9D9;
+    background: #F8F9FA;
+}
+
+.btn__create {
+    color: #D9D9D9;
+    padding: 7px 40px;
+    border-radius: 4px;
+    background: var(--brand-1, #364FC7);
+}
+
+.modalDelete {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 800px;
+    padding: 15px 24px;
+    gap: 25px
+}
+
+#titleDelete {
+    color: var(--grey-1, #212529);
+    font-size: 20px;
+    font-family: var(--font-family-IBM);
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%;
+}
+
+#modal__titleDelete {
+    color: var(--grey-1, #212529);
+    font-size: 16px;
+    font-family: var(--font-family-IBM);
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+}
+
+#textDelete {
+    color: var(--grey-3, #495057);
+    font-size: 16px;
+    font-family: IBM Plex Sans;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+.post {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-bottom: 20px;
+}
+
+.btn__confirm {
+    border-radius: 4px;
+    border: 1px solid var(--alert-1, #C73650);
+    background: var(--alert-1, #C73650);
+}
