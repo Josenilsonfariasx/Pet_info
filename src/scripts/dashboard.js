@@ -9,10 +9,7 @@ const permission = ()=>{
         const div = document.querySelector('span')
         div.style.display = 'none'
         body.style.display = 'none'
-        const avatar = localStorage.removeItem('@petavatar')
-        const email = localStorage.removeItem('@petemail')
-        const id = localStorage.removeItem('@petid')
-        const username = localStorage.removeItem('@petUsername')
+
         setTimeout(function(){
             Toastify({
                 text: `Efetue o login antes de acessar`,
