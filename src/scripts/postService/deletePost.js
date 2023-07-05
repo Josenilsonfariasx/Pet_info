@@ -44,8 +44,17 @@ export const deletePost = async (idPost)=>{
 
 export const openModalDelete = ()=>{
     const btnOpen = document.querySelectorAll('.list__delete')
+    const btnClose = document.querySelectorAll('.btn__cancelar')
     const modalDelete = document.querySelector('#dialog__delete')
     const btnconfirm = document.querySelector('.btn__confirm')
+
+    btnClose.forEach((btn)=>{
+        btn.addEventListener('click', ()=> {
+            modalDelete.close() 
+            console.log('ola')
+        })
+    })
+    
     btnOpen.forEach((btn)=>{
         btn.addEventListener('click', ()=>{
             modalDelete.showModal()
