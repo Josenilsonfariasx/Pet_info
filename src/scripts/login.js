@@ -12,6 +12,8 @@ const userLogin = async (userLogin)=>{
     .then(async(res)=>{
         const resJson = await res.json()
         if(res.ok){ 
+            const spin = document.getElementById('spin')
+            spin.style.display = 'flex'
             localStorage.setItem('@petToken', resJson.token)
             setTimeout(4000,Toastify({
                 text: `Logado com sucesso`,
@@ -91,8 +93,6 @@ const login = ()=>{
             }).showToast();
             btnLogin.disabled = !areInputsFilled();
         }else{
-            const spin = document.getElementById('spin')
-            spin.style.display = 'flex'
             inputs.forEach((input) =>{
                 login[input.name] = input.value
             })
