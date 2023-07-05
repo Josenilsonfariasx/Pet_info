@@ -1,5 +1,6 @@
 import { getPost } from "./postService/getPost.js"
 import { edit} from "./postService/editPost.js"
+import { openModalDelete } from "./postService/deletePost.js"
 
 const permission = ()=>{
     const token = localStorage.getItem('@petToken')
@@ -93,6 +94,7 @@ export const render = (postes)=>{
     
 render(postes)
 edit(postes)
+openModalDelete()
 
 // render(postes)
 // savePost()
