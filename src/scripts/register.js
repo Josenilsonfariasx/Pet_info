@@ -28,10 +28,10 @@ const createUser = async (user)=>{
             setTimeout(function() {
                 window.location.replace('../../index.html');
             }, 3000);
+            const spin = document.getElementById('spin')
+            spin.style.display = 'flex'
         return resJson
         }else {
-            const spin = document.getElementById('spin')
-            spin.style.display = 'none'
             throw new Error(resJson.message)
         }
     })
@@ -63,12 +63,36 @@ const userRegister = ()=>{
     const inputs = document.querySelectorAll('input')
 
     btnRegister.addEventListener('click', ()=>{
-        const spin = document.getElementById('spin')
-            spin.style.display = 'flex'
+        let count = 0
         inputs.forEach(input =>{
-            newUser[input.name] = input.value
-        })
-        createUser(newUser)
+            if(input.value !==''){
+                newUser[input.name] = input.value
+            }
+            else{
+                count++
+                newUser[input.name] = ''
+            }
+            })
+            if(count == 0){
+                console.log(newUser)
+                createUser(newUser)
+            }
+            else {
+                setTimeout(4000,Toastify({
+                    text: `Preencha todos os campos`,
+                    duration: 4000,
+                    newWindow: true,
+                    close: true,
+                    gravity: "bottom", // `top` or `bottom`
+                    position: "right", // `left`, `center` or `right`
+                    stopOnFocus: true, // Prevents dismissing of toast on hover
+                    style: {
+                        background: "red",
+                    },
+                    onClick: function(){} // Callback after click
+                }).showToast())
+            }
+
     })
 }
 
