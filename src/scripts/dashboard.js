@@ -42,7 +42,7 @@ export const render = (postes)=>{
 
     postes.forEach(element => {
         const novData = new Date(element.createdAt)
-        const options = { month: 'long', year: 'numeric' };
+        const options = {day:'numeric', month: 'long', year: 'numeric' };
         const formattedDate = novData.toLocaleDateString('pt-BR', options);
         if(element.user.id === id){
 
